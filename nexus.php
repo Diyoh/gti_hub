@@ -27,16 +27,7 @@ include 'header.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GTI-Hub Nexus</title>
-    <style>
-        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 20px auto; padding: 20px; }
-        .badge { background: #687291; color: white; padding: 2px 8px; border-radius: 4px; font-size: 0.8em; display: inline-block; }
-        .online { color: green; font-weight: bold; }
-        header nav ul { list-style: none; padding: 0; display: flex; gap: 15px; }
-        header .logo { font-size: 1.5rem; font-weight: bold; color: #333; }
-        section { margin-bottom: 30px; }
-        h1, h2 { color: #2c3e50; }
-        footer { margin-top: 50px; border-top: 1px solid #eee; padding-top: 20px; font-size: 0.9em; color: #666; }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <main>
