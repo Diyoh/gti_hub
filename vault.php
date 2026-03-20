@@ -23,16 +23,7 @@ include 'header.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GTI-Hub | <?php echo $pageTitle; ?></title>
-    <style>
-        body { font-family: sans-serif; line-height: 1.6; max-width: 900px; margin: 20px auto; padding: 20px; }
-        table { width: 100%; border-collapse: collapse; margin-top: 20px; background: white; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-        th, td { padding: 12px; text-align: left; border-bottom: 1px solid #ddd; }
-        th { background: #687291; color: white; }
-        tr:hover { background-color: #f5f5f5; }
-        .badge { background: #687291; color: white; padding: 2px 8px; border-radius: 4px; font-size: 0.8em; }
-        .online { color: green; font-weight: bold; }
-        footer { margin-top: 50px; border-top: 1px solid #eee; padding-top: 20px; font-size: 0.9em; color: #666; }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <main>
