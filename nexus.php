@@ -1,6 +1,6 @@
 <?php
 // 1. DATA INITIALIZATION (The Server-Side Logic)
-$innovatorName = "Arrey Brown";
+$innovatorName = "Eyong Justine";
 $isLead = true; // Boolean for role-based logic
 $innovationScore = 92;
 $techStack = [
@@ -11,6 +11,13 @@ $techStack = [
 ];
 
 // 2. MODULARITY: Injecting the reusable header
+require_once 'db.php'; // Include database connection
+
+// Fetch the total number of sprints from the vault
+$stmt = $pdo->query("SELECT COUNT(*) as total FROM sprints");
+$vaultStats = $stmt->fetch();
+$totalSprints = $vaultStats['total'];
+
 include 'header.php';
 ?>
 
@@ -41,6 +48,7 @@ include 'header.php';
         <?php endif; ?>
         
         <p>Innovation Score: <strong><?php echo $innovationScore; ?></strong></p>
+        <p>Sprints Launched: <strong><?php echo $totalSprints; ?></strong></p>
     </section>
 
     <section id="skills-matrix">
