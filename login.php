@@ -4,6 +4,7 @@
  * This script handles user login and session initialization.
  */
 
+
 session_start();
 require_once 'db.php';
 
