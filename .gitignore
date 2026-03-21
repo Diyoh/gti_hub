@@ -6,7 +6,9 @@ Thumbs.db
 .php_history
 
 # Documentation/Backups
+Documentation/
 *.pdf
 *.bak
 *.tmp
 *.sql.bak
+ 

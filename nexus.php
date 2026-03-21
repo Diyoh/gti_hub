@@ -1,14 +1,19 @@
 <?php
+// Day 4 Gatekeeper: Access Control Check
+session_start();
+if (!isset($_SESSION['innovator_id'])) {
+    header("Location: login.php");
+    exit;
+}
+
 // 1. DATA INITIALIZATION (The Server-Side Logic)
-$innovatorName = "Eyong Justine";
+$innovatorName = $_SESSION['name']; // Load from verified session
 $isLead = true; // Boolean for role-based logic
 $innovationScore = 92;
-$techStack = [
-    "HTML5 Semantic Markup",
-    "CSS3 Layout Engines",
-    "Server-Side PHP",
-    "Git Version Control"
-];
+
+// Dynamic Tech Stack from Session
+$techStackString = $_SESSION['tech_stack'] ?? 'Not specified';
+$techStack = array_map('trim', explode(',', $techStackString));
 
 // 2. MODULARITY: Injecting the reusable header
 require_once 'db.php'; // Include database connection
