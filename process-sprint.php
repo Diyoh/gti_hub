@@ -1,4 +1,10 @@
 <?php
+// Day 4 Gatekeeper: Access Control Check
+session_start();
+if (!isset($_SESSION['innovator_id'])) {
+    header("Location: login.php");
+    exit;
+}
 /**
  * Day 3: Persistence Layer Upgraded
  * This script now saves data into the Innovation Vault (MySQL).
