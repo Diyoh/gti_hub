@@ -1,4 +1,10 @@
 <?php
+// Day 4 Gatekeeper: Access Control Check
+session_start();
+if (!isset($_SESSION['innovator_id'])) {
+    header("Location: login.php");
+    exit;
+}
 // DATA INITIALIZATION
 $pageTitle = "Sprint Intake";
 
